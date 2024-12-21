@@ -38,7 +38,7 @@ export type LiveConfig = {
   model: string;
   systemInstruction?: { parts: Part[] };
   generationConfig?: Partial<LiveGenerationConfig>;
-  tools?: Array<Tool | { googleSearch: {} } | { codeExecution: {} }>;
+  tools?: Array<Tool | { googleSearch: {} }>;
 };
 
 export type LiveGenerationConfig = GenerationConfig & {
